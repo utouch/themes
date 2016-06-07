@@ -1,0 +1,35 @@
+//改为圆角头像
+.site-author-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 96px;
+  height: auto;
+  border: 2px solid $site-author-name-color;
+  padding: 2px;
+
+  border-radius: 50%
+  webkit-transition: 1.4s all;
+  moz-transition: 1.4s all;
+  ms-transition: 1.4s all;
+  transition: 1.4s all;
+}
+
+//鼠标悬浮头像动画
+.site-author-image:hover { 
+  background-color: #00000000 ;
+  webkit-transform: rotate(0deg) scale(1.1);//rotate是否旋转
+  moz-transform: rotate(0deg) scale(1.1);
+  ms-transform: rotate(0deg) scale(1.1);
+  transform: rotate(0deg) scale(1.1);
+}
+
+.site-author-name {
+  margin: 5px 0 0;
+  color: $site-author-name-color;
+}
+
+.site-description {
+  margin-top: 5px;
+  font-size: $site-description-font-size;
+  color: $grey-dark;
+}
